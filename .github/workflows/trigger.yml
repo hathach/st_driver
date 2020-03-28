@@ -11,4 +11,4 @@ jobs:
     - name: Trigger TinyUSB
       shell: bash
       run: |
-        curl -X POST -H "Authorization: token ${{ secrets.GH_REPO_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" --data '{"event_type": "rebuild"}' https://api.github.com/repos/hathach/tinyusb/dispatches
+        curl -X POST -H "Authorization: token ${{ secrets.GH_REPO_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" --data '{"event_type": "Rebuild triggered from st_driver"}' https://api.github.com/repos/hathach/tinyusb/dispatches
